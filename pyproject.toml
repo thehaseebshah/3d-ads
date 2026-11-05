@@ -1,0 +1,15 @@
+[project]
+name = "pitchads"
+version = "0.1.0"
+description = "Virtual 3D pitch advertising for recorded football / futsal video (fixed panoramic camera)"
+requires-python = ">=3.10"
+dependencies = ["numpy", "opencv-python-headless"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+pitchads = "pitchads.cli:main"
+
+[tool.setuptools]
+packages = ["pitchads"]
